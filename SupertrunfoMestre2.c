@@ -163,13 +163,14 @@ int main() {
         break;
         }
 
-    printf("Digite o número do segundo atributo que deseja comparar(Não pode ser igual a o primeiro Atributo!)\n");
-    printf("1. População\n");
-    printf("2. Área\n");
-    printf("3. PIB\n");
-    printf("4. Pontos Turísticos\n");
-    printf("5. Densidade Populacional\n");
+    printf("Digite o número do segundo atributo que deseja comparar (diferente do primeiro):\n");
+    if (atributo1 != 1) printf("1. População\n");
+    if (atributo1 != 2) printf("2. Área\n");
+    if (atributo1 != 3) printf("3. PIB\n");
+    if (atributo1 != 4) printf("4. Pontos Turísticos\n");
+    if (atributo1 != 5) printf("5. Densidade Populacional\n");
     scanf("%d", &atributo2);
+
 
         if (atributo1 == atributo2) {
         printf("Você não pode escolher o mesmo atributo, escolha outro!\n");
@@ -248,4 +249,5 @@ int main() {
         return 0;
     }
         
+
 
